@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Tablas</title>
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+    <h1>Tablas</h1>
+    <!--Texto descriptivo de una tabla "caption"-->
+    <caption>Tabla de nombres</caption>
+    <table><!--Creacion de tabla-->
+        <tr><!--Creacion de celdas-->
+            <th>Nombre</th><!--Creacion de columnas-->
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>Fernanda</td>
+        </tr>
+        <tr>
+            <td>Altamira</td>
+            <td>Rivera</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <p>Encabezado simmple</p>
+        <thead><!--Agrupa los elementos de la cabecera en la tabla-->
+            <tr>
+                <!--Colspan permite expandir las celdas a las columnas de datos-->
+                <th colspan="2">Encabezado de Tablas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>El cuerpo de tabla</td>
+                <td>con 2 columnas</td>
+            </tr>
+        </tbody>
+    </table>
+
+<!--Separacion de codigo-->
+
+    <p>Table with colgroup</p>
+<table>
+  <colgroup span="4"></colgroup> <!--Para aplicar una propiedad a más de una columna no es necesario repetir la propiedad en cada elemento <col>. Lo más sencillo es aplicarle el atributo span al primer elemento <col>. Este atributo funciona igual que rowspan y colspan, es decir, nos permite expandir la influencia de <col> al número de columnas que queramos.-->
+  <tr>
+    <th>Countries</th>
+    <th>Capitals</th>
+    <th>Population</th>
+    <th>Language</th>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Washington, D.C.</td>
+    <td>309 million</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>9 million</td>
+    <td>Swedish</td>
+  </tr>
+</table>
+
+<p>Table with colgroup and col</p>
+<table>
+  <colgroup><!--El elemento <col> se especifica dentro de un bloque <colgroup>, justo debajo de la apertura <table>.-->
+    <col span="2" style="background-color: rgb(218, 120, 243)" /> <!--Este elemento nos permite especificar propiedades de estilo para toda una columna. Sin este elemento tendríamos que especificar el estilo en cada celda <th> o <td> de la columna que queramos estilizar. -->
+    <col />
+  </colgroup>
+  <tr>
+    <th>Lima</th>
+    <th>Limon</th>
+    <th>Naranja</th>
+  </tr>
+  <tr>
+    <td>Green</td>
+    <td>Yellow</td>
+    <td>Orange</td>
+  </tr>
+</table>
+
+<p>Cuadro sencillo con leyenda(caption)</p>
+<table>
+  <caption>
+    Subtítulo impresionante
+  </caption>
+  <tr>
+    <td>Dato Impresionante</td>
+  </tr>
+</table>
+<br>
+<br>
+
+<hr>
+<br>
+<hr>
+<h1>Vinculos de Anclaje</h1>
+<!--
+  De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. Para cambiar esto, debe especificar otro destino para el vínculo.
+
+El targetatributo especifica dónde abrir el documento vinculado.
+
+El targetatributo puede tener uno de los siguientes valores:
+
+_self- Por defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic
+_blank- Abre el documento en una nueva ventana o pestaña
+_parent- Abre el documento en el marco principal
+_top- Abre el documento en el cuerpo completo de la ventana.
+-->
+
+<div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Agregar una identificación con un nombre de anclaje-->
+    <a id="nombre-anclaje"> Aquí el nombre de la sección a la que quieres brincar </a>
+    </div><br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Un anclaje en una cabecera-->
+    <h4 id="nombre-anclaje">Nombre de la sección</h4>
+    </div> <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Anclaje en una imagen-->
+    <a href="./index2.html"><img id="image-G" src="./Assets/puente.jpg" alt="Will" title="Super Will" width="400" height="300" /></a>
+    <img id="image-G" src="./Assets/puente.jpg" alt="Will" title="Super Will" width="400" height="300" />
+    </div>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--anclaje en un párrafo-->
+    <p id="nombre-anclaje">Nombre del párrafo</p>
+    </div> <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Crear un hipervínculo utilizando el identificador del objetivo del vínculo, precedido por #-->
+    <a href="#nombre-anclaje">Brincar a la parte de la página con “nombre-anclaje” id </a>
+    </div> <br>
+    <br>
+    <br>
+    <hr>
+    <h1>pastel de chocolate</h1>
+ <p>Para conocer los ingredientes has click<a href="./index2.html"> aqui..</a></p>
+<br>
+
+<hr>
+<h1>Agua de limon</h1>
+<p>Para conocer los ingredientes has click<a href="./index3.html"> aqui..</a></p>
+<br>
+</body>
+</html>
